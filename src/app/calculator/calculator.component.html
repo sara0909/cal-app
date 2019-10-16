@@ -1,0 +1,22 @@
+<br>
+<mat-card id="calculator" style="text-align: center;" >
+                <mat-card-title>CALCULATOR</mat-card-title> 
+        <mat-card-content> 
+                <input   type="number" name="num1" [(ngModel)]="num1"  >  
+                <input   type="number" name="num2" [(ngModel)]="num2"  >
+                
+            
+        </mat-card-content>
+
+        <mat-card-footer text-center>
+                <br>
+                <button mat-raised-button color="primary" (click)="add()" style="margin-right:5px;" >ADD</button>
+                <button mat-raised-button color="accent" (click)="sub()" style="margin-right:5px;">SUB</button>
+                <button mat-raised-button color="accent" (click)="div()" style="margin-right:5px;">DIV</button>
+                <button mat-raised-button color="primary"  (click)="multiply()">MULTIPLY</button>
+                <br>
+                <h4>RESULT= {{result}}</h4>
+                
+        </mat-card-footer>
+</mat-card>
+        
